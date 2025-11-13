@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: flex-end;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #1E1E1E;
+    position: relative;
+}
+
+.container .car {
+    height: 700px;
+    width: 800px;
+    z-index: 8888888;
+    position: relative;
+}
+
+.container .car:hover img {
+    transform: scale(1.05);
+}
+
+.container .car img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    /* width: 880px; */
+    object-fit: cover;
+    left: -37px;
+    transition: transform 0.5s ease;
+}
+
+.register-box {
+    height: 600px;
+    width: 420px;
+    border-radius: 5px;
+    box-shadow: rgba(188, 187, 187, 0.45) 0px 25px 20px -15px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 10px;
+    color: white;
+    background: linear-gradient(90deg, #5e5e5e 0%, #302f2f 60%, #141414 100%);
+}
+
+.title {
+    font-size: 41px;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+
+.message,
+.signin {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+}
+
+.sign-in {
+    text-decoration: underline;
+}
+
+
+.input {
+    background-color: #fff;
+    color: black;
+    width: 300px;
+    padding: 12px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.4);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn {
+    color: rgb(0, 0, 0);
+    background-color: #c1c1c1;
+    height: 35px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.4);
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.5);
+    transition: all 0.5s ease;
+    z-index: 0;
+}
+
+.btn:hover::before {
+    left: 0;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn:hover span {
+    color: #ffffff;
+}
+
+.btn span {
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s ease;
+}
+
+.signin a {
+    font-size: x-large;
+    color: #ffffff;
+}
+
+img {
+    width: 300px;
+    opacity: 0;
+    transform: translateY(-150px);
+    transition: all 1.2s ease-out;
+}
+
+img.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+@media (max-width: 1200px) {
+
+    .container .car {
+        display: none;
+    }
+
+    .register-box {
+        width: 350px;
+        height: auto;
+        padding: 20px;
+    }
+
+    .input {
+        width: 250px;
+    }
+}
