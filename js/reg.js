@@ -1,3 +1,4 @@
+
 var pass = document.getElementById('password');
 var cPass = document.getElementById('confirmPassword');
 var email = document.getElementById('email');
