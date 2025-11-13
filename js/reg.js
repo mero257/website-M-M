@@ -33,19 +33,25 @@ function saveData(event) {
     alert("Registration successful!")
     window.location.href = "login.html";
 }
+ // fade
+   document.addEventListener("DOMContentLoaded", () => { 
+    document.body.classList.add("fade-in");
+  });
 
-
-
-const images = document.querySelectorAll('.fade-img');
-const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show'); // تضيف الكلاس اللي بيعمل الانيميشن
-            observer.unobserve(entry.target);   // عشان ما يتكررش كل مرة
-        }
-    });
-}, {
-    threshold: .6 // يعني لازم 20% من الصورة تظهر عشان يتفعل الأنيميشن
-});
-
-images.forEach(img => observer.observe(img));
+  document.querySelectorAll("a").forEach(link =>{
+    link.addEventListener("click",e =>{
+        e.preventDefault();
+        const target = e.target.getAttribute("href");
+        document.body.style.opacity = 0;
+        setTimeout(() =>{
+            window.location.href = target;
+        },500);
+    })
+  })
+//slide-in
+document.addEventListener("DOMContentLoaded", () => {
+    const car = document.querySelector("img");
+    if (car) {
+        car.classList.add("slide-in");
+    }
+})

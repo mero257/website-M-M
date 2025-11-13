@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body {
+    height: 100vh;
+    background-color: #1E1E1E;
+}
+.landing {
+  height: 100vh;
+  background-image: url("/img/featured_aboutAdobeStock_285273061.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+ #nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
+  height: 70px;
+  background-color: #4d4d4d31;
+  width: 85%;
+  border-radius: 30px;
+  align-items: center;
+  position: fixed;
+
+
+box-shadow: 0 6px 15px rgb(48, 47, 47);
+
+}
+ #nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#nav .logo p {
+  font-size: 25px;
+  color: #fff;
+}
+
+ #nav .logo img {
+  width: 55px;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+
+ #nav .ul ul {
+  margin-right: 50px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: white;
+}
+ #nav .ul .same {
+  background-color: #c1c1c1;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+
+#nav .ul .same::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 17, 17, 0.5);
+  transition: all 0.5s ease;
+  z-index: 0;
+}
+
+#nav .ul .same:hover::before {
+  left: 0;
+}
+
+#nav .ul .same a {
+  color: rgb(0, 0, 0);
+  font-size: medium;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+}
+
+#nav .ul .same:hover a {
+  color: #e0e0e0;
+}
+ 
+#nav .ul  #userName {
+  margin-right: 10px;
+  background-color:transparent;
+  box-shadow: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+.landing-text {
+  max-width: 500px;
+  position: absolute;
+  left: 110px;
+  bottom: 25%;
+}
+
+.landing-text h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.landing-text span {
+  color: #c1c1c1;
+}
+
+.landing-text p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.explore-btn {
+    color: rgb(0, 0, 0);
+    background-color: #c1c1c1;
+    height: 40px;
+    width: 130px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.4);
+}
+
+.explore-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.5);
+    transition: all 0.5s ease;
+    z-index: 0;
+}
+
+.explore-btn:hover::before {
+    left: 0;
+}
+
+.explore-btn:hover {
+    color: white;
+    font-weight: 700;
+    z-index: 1;
+}
+
+.lan {
+  height: 100vh;
+  width: 10%;
+  
+}
