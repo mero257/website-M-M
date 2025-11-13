@@ -5,10 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>log in</title>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="reg.css">
 </head>
 
 <body>
+   <section id="nav">
+        <div class="logo">
+          <img src="/img/logo.png" alt="">
+        <p>Autoghazal</p>
+        </div>
+        <div class="ul">
+          <ul>
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="reg.html">Register</a></li>
+          </ul>
+        </div>
+      </section>
     <div class="container">
         <form class="register-box" onsubmit="return saveData(event)">
             <h1 class="title">Register</h1>
@@ -19,14 +33,12 @@
             <input id="password" class="input" type="password" placeholder="Password" required>
             <input id="confirmPassword" class="input" type="password" placeholder="Confirm Password" required>
             <button type="submit" class="btn"><span>Submit</span></button>
-            <p class="signin">Already have an account? <a href="#" class="sign-in">Sign-in</a></p>
+            <p class="signin">Already have an account? <a href="login.html" class="sign-in">Sign-in</a></p>
         </form>
         <div class="car">
-            <img src="img/login - Copy.png" class="fade-img">
+            <img class="img" src="img/login - Copy.png" alt="">
         </div>
     </div>
-
-
     <script src="js/reg.js"></script>
 </body>
 

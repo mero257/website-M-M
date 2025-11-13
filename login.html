@@ -4,27 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>log in</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-
+<section id="nav">
+        <div class="logo">
+          <img src="/img/logo.png" alt="">
+        <p>Autoghazal</p>
+        </div>
+        <div class="ul">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="reg.html">Register</a></li>
+          </ul>
+        </div>
+      </section>
 <div class="container">
         <div class="car">
-            <img src="img/login.png" class="fade-img">
+            <img class="img" src="img/login.png" alt="pho">
         </div>
         <div class="log_in_form">
             <h1 class="h1">Log In</h1>
-            <form id="loginForm" action="#" method="post">
+            <form class="form" id="loginForm" action="#" method="post">
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required placeholder="Enter your email ">
                     <label for="password">Password:</label>
                     <input type="password" id="loginPassword" name="password" required placeholder="Enter your password ">
                 <button id="loginBtn" type="submit" class="btn"><span>Log In</span></button>
-                <p>have no acount? create one<a href="reg.html"> here</a></p>
+                <p>have no acount? create one<a class="link" href="reg.html"> here</a></p>
                 
             </form>
         </div>
     </div>
+ 
+
     <script src="js/log.js"></script>
 </body>
 </html>
